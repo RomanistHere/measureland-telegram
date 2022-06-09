@@ -11,7 +11,6 @@ const replyText = {
 	'replyWrong': 'Use reply to answer user'
 };
 
-// need to manually change quotes to literal template strings after the build
 const firstReplies = {
 	'ru': `Привет, здесь мы принимаем жалобы, предложения и любые другие вещи, которыми ты хочешь поделиться. \n\nВсё, что ты напишешь, будет отправлено нашей команде - и, как только кто-то освободится, мы сразу же свяжемся с тобой. \n\nЕсли с момента отправки прошло больше суток, и никто не ответил - смело пиши ещё раз. Мы засекали случаи, когда бот не отправляет сообщение. Альтернативно, вступай в нашу группу и задавай свой вопрос в комментариях: @measureland_ru или в нашем чате: @measureland_chat_ru`,
 	'en': `Hi there, here we are listening to your reports, suggestions or anything else that you want to share with us. \n\nEverything you write, will be anonymously forwarded to our team and as soon as someone will have some spare time, we will reply you back. \n\nIf no one replied for some time, write us again. We has detected bot not sending us the messages in the past. Alternatively, ask the questions in our channel: @measureland or group: @measureland_chat`,

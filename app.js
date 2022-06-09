@@ -1,12 +1,12 @@
 import { Telegraf } from 'telegraf';
 
-import { botToken } from './src/env.js';
+import { botToken, domain } from './src/env.js';
 
 const bot = new Telegraf(botToken);
 
 (async () => {
 	// set webhook
-	await bot.telegram.setWebhook('https://tg-test.romanisthere.workers.dev/bot');
+	await bot.telegram.setWebhook(domain);
 
 	// delete webhook
 	// await bot.telegram.deleteWebhook();
