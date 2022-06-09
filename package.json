@@ -1,0 +1,38 @@
+{
+  "name": "telegram-feedback-bot",
+  "version": "1.0.0",
+  "description": "Telegram feedback bot for Measureland (cloudflare worker)",
+  "main": "dist/worker.js",
+  "scripts": {
+    "build": "webpack",
+    "format": "prettier --write  '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'",
+    "lint": "eslint --max-warnings=0 src && prettier --check '*.{json,js}' 'src/**/*.{js,ts}' 'test/**/*.{js,ts}'"
+  },
+  "author": "author",
+  "license": "MIT OR Apache-2.0",
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "prettier",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    }
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^3.11.0",
+    "eslint": "^8.17.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.6.2",
+    "service-worker-mock": "^2.0.5",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "@cfworker/web": "^1.12.3",
+    "cfworker-middware-telegraf": "^2.0.0",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "telegraf": "^4.8.5"
+  }
+}
